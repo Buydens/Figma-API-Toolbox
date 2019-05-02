@@ -1,0 +1,23 @@
+{
+  "name": "figma-api-toolbox",
+  "version": "1.0.0",
+  "description": "A simple reusable router for connectint with the Figma API and managing objects from it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Buydens/Figma-API-Toolbox.git"
+  },
+  "keywords": [
+    "Figma",
+    "API"
+  ],
+  "author": "Sam Buydens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Buydens/Figma-API-Toolbox/issues"
+  },
+  "homepage": "https://github.com/Buydens/Figma-API-Toolbox#readme"
+}
