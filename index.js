@@ -16,7 +16,8 @@ function FigmaApiToolkit(token, fileId) {
   };
   
   FigmaApiToolkit.prototype.getFile = async function() {
-    await FigmaRouter.getFile(this.token, this.fileId);
+    let result = await FigmaRouter.getFile(this.token, this.fileId);
+    return await result.json();
   };
   
   //FigmaApiToolkit(process.env.figmaApiKey, "06gofHh4ah2Hpd69FGccBXNO");
