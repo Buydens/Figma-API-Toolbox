@@ -1,8 +1,12 @@
 "use strict";
 
-const token = process.env.VUE_APP_figmaApiKey;
-
 export default {
+
+    token,
+
+    tokenCheck: function(){
+        console.log("token is "+ token);
+    }
 
 /*
     getFile: async function(figmaId){

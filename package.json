@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Buydens/Figma-API-Toolbox/issues"
   },
-  "homepage": "https://github.com/Buydens/Figma-API-Toolbox#readme"
+  "homepage": "https://github.com/Buydens/Figma-API-Toolbox#readme",
+  "devDependencies": {
+    "babel-register": "^6.26.0"
+  }
 }
