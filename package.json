@@ -1,6 +1,6 @@
 {
   "name": "figma-api-toolbox",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A simple reusable router for connectint with the Figma API and managing objects from it.",
   "main": "index.js",
   "scripts": {
