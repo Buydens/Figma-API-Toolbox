@@ -1,8 +1,25 @@
-console.log("test");
+'use strict';
+var FigmaRouter = require("./src/FigmaRouter");
 
-import FigmaRouter from 'FigmaRouter';
+function FigmaApiToolkit(token, fileId) {
+    if (typeof token === 'undefined') {
+        throw "token is required to connect to the Figma API";
+    }
+    if (typeof fileId === 'undefined') {
+        throw "fileId is required to target the correct file via the Figma API";
+    }
+    if (!(this instanceof FigmaApiToolkit)) {
+      return new FigmaApiToolkit(token, fileId);
+    }
+    this.token = token;
+    this.fileId = fileId;
+  };
+  
+  FigmaApiToolkit.prototype.getFile = async function() {
+    await FigmaRouter.getFile(this.token, this.fileId);
+  };
+  
+  //FigmaApiToolkit(process.env.figmaApiKey, "06gofHh4ah2Hpd69FGccBXNO");
+  //FigmaApiToolkit.prototype.getFile();
 
-const token = process.env.VUE_APP_figmaApiKey;
-var r = new FigmaRouter;
-r.token = token;
-r.tokenCheck();
+  module.exports = FigmaApiToolkit;
